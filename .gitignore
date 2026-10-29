@@ -1,0 +1,47 @@
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Robot Framework output
+results/
+output.xml
+log.html
+robot_report.html
+report.htm
+selenium-screenshot-*.png
+
+# Local HTML data reports
+report.html
+plotly_report.html
+
+# Parquet datasets
+*.parquet
+*.parq
+facility_name_min_time_spent_per_visit_date/
+facility_type_avg_time_spent_per_visit_date/
+patient_sum_treatment_cost_per_facility_type/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.idea/
+.vscode/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
