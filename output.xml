@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.5 (Python 3.14.0 on win32)" generated="2026-10-28T15:35:35.406860" rpa="false" schemaversion="5">
+<suite id="s1" name="Test Browser" source="D:\Programs\EPAM\DQE materials\temp\parquet_data\test_browser.robot">
+<test id="s1-t1" name="Chrome Smoke Test" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-10-28T15:35:35.718621" level="INFO">Opening browser 'Chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-10-28T15:35:35.718395" elapsed="0.634606"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-10-28T15:35:36.353822" level="INFO">Executing JavaScript:
+return document.title
+Without any arguments.</msg>
+<msg time="2026-10-28T15:35:36.360597" level="INFO">${title} = </msg>
+<var>${title}</var>
+<arg>return document.title</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-10-28T15:35:36.353562" elapsed="0.007148"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Chrome and JavaScript work</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-10-28T15:35:36.361298" elapsed="0.000518"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-10-28T15:35:39.362629" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses execution for the given time.</doc>
+<status status="PASS" start="2026-10-28T15:35:36.362108" elapsed="3.000653"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-10-28T15:35:39.363250" elapsed="2.156900"/>
+</kw>
+<status status="PASS" start="2026-10-28T15:35:35.717405" elapsed="5.803054"/>
+</test>
+<status status="PASS" start="2026-10-28T15:35:35.408021" elapsed="6.113441"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test Browser" id="s1" pass="1" fail="0" skip="0">Test Browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
