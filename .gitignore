@@ -23,6 +23,10 @@ selenium-screenshot-*.png
 report.html
 plotly_report.html
 
+#
+test_browser.robot
+robot_parquet_validation.zip
+
 # Parquet datasets
 *.parquet
 *.parq
